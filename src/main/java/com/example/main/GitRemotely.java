@@ -3,6 +3,7 @@ package com.example.main;
 public class GitRemotely {
 
     // > git clone ....git 克隆项目的所有版本信息，历史记录
+    //     如果使用HTTP协议，需要提供用户名称和密码
     // > git log
     // > git log --oneline
     // > git log --oneline | wc -l 统计行数，也即项目提交的次数

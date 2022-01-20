@@ -30,6 +30,5 @@ public class GitConfig {
     // > git config --list
     // > vim .git/config
 
-    // .gitignore 不需要提交的
-    //
+    // .gitignore 不需要提交的文件和配置
 }
