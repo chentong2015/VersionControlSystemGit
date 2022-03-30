@@ -1,0 +1,20 @@
+
+注意fork的区别：
+Any public Git repository can be forked or cloned.
+A fork creates a completely independent copy of Git repository.
+Git clone creates a linked copy that will continue to synchronize with the target repository.
+
+> local my branch      日常小的更改和提交
+> remote my branch     大的更改和变动提交
+> remote master branch 如果要merge到master分组，需要提Create pull request，进行更改的确认
+
+TODO: Git工作项目实战指南
+1. 本地修改，查看修改的文件和地方
+2. pull origin/master 最新master的信息，合并到当前的分支进行开发
+3. git rebase origin/master 将自己分支更改的东西，rebase在最新的master分支上，进行叠加
+4. git force push 在完成rebase之后，强制push到远端的指定分支上
+5. merge to origin/master 最后做pull request，更新到最新的master分支上
+
+
+在一个分支上git update ?
+如果使用git update之后，恢复成原来的样子 > get reset --hard origin/subsys/integ-comp-lib

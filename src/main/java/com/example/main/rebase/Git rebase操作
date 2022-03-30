@@ -1,0 +1,2 @@
+> git rebase    合并分支，不保留分支的历史记录 > 有可能出现冲突
+  比如. get rebase origin/master 则会将本地的分支叠加到远端的master分支上，丢弃当前分支之前的历史记录
