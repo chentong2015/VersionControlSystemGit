@@ -9,11 +9,15 @@ Git clone creates a linked copy that will continue to synchronize with the targe
 > remote master branch 如果要merge到master分组，需要提Create pull request，进行更改的确认
 
 TODO: Git工作项目实战指南
-1. 本地修改，查看修改的文件和地方
-2. pull origin/master       获取最新master的信息，合并到当前的分支进行开发
-3. git rebase origin/master 将自己分支更改的东西，rebase在最新的master分支上，进行叠加
-4. git force push           在完成rebase之后，强制push到远端的指定分支上
-5. merge to origin/master   最后做pull request，更新到最新的master分支上
+> 本地修改，查看commit修改的文件和地方
+> git fetch 获取到远程仓库的状态，不是最新的数据
+> git checkout master        切换到本地的master，同步远端
+  git pull origin/master     获取远程master上的最新的更改数据
+> git checkout my-branch
+  squarh 之前所有的提交         把本地做的修改的commit全部合成一个commit
+> git rebase origin/master   将自己分支更改的东西，rebase在最新的master分支上，进行叠加
+  git force push             在完成rebase之后，强制push到远端的指定分支上
+> merge to origin/master     pull request通过之后，merge到origin/master上面
 
 
 在一个分支上git update ?
