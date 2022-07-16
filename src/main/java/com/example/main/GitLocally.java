@@ -1,5 +1,6 @@
 package com.example.main;
 
+// TODO: HEAD始终在当前工作的分支上
 public class GitLocally {
 
     // > Git init 创建一个.git/仓库，其中包含所有的metadata
@@ -9,13 +10,14 @@ public class GitLocally {
     // > git commit -m "..."
     // > git commit -am "..." 合并add和commit两个操作
 
-    // > git log
-    // > git diff --cached 比较暂存区Staging Area和Repository仓库的区别
-    // > git diff dd68.... 查看两版本提交之间的的区别
+    // > git log                查看提交的commit日志
+    // > git diff --cached      比较暂存区Staging Area和Repository仓库的区别
+    // > git diff dd68....      查看两版本提交之间的的区别
     // > git diff HEAD~1..HEAD  HEAD是最新提交的版本，diff查看的区别的是从前一版到HEAD的区别
     // > git diff HEAD~1..      和上一个指令效果一致
     // > git diff HEAD~1        和上一个指令效果一致
-    // TODO: HEAD始终在当前工作的分支上
+
+    // > git diff-tree -C -r ac... xns5... 比较两版提交之间的区别
 
     // > git add -u 添加所有的updates files to my staging area 暂存区(其中的改变将会在下一次的提交中添加)
     // > git add -A 添加所以的文件，包括没有追踪的文件
