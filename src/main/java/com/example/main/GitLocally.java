@@ -17,17 +17,18 @@ public class GitLocally {
     // > git diff HEAD~1..      和上一个指令效果一致
     // > git diff HEAD~1        和上一个指令效果一致
 
-    // > git diff-tree -C -r ac... xns5... 比较两版提交之间的区别
+    // > git diff-tree -C -r ac... xns5... 比较两版提交之间的所有区别(适用于提交量过大的场景)
     //    -C	detect copies.
     //    -r	diff recursively
 
     // > git add -u 添加所有的updates files to my staging area 暂存区(其中的改变将会在下一次的提交中添加)
     // > git add -A 添加所以的文件，包括没有追踪的文件
 
-    // > git checkout file.txt 撤回之前的修改
-    // > git reset --hard      撤回到前一个HEAD，撤销所有的修改
+    // > git checkout file.txt   撤回之前的修改
+    // > git reset --hard        撤回到前一个HEAD，撤销所有的修改
     // > git reset --soft HEAD~1 软撤回到指定的修改
     // > git reset --hard HEAD~1 撤回到上一次的commit提交的状态
+    // > get reset --hard origin/subsys/test
 
     // > git clean -n
     // > git clean -f  移除掉新添加的，没有追踪的文件
