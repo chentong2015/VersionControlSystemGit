@@ -18,6 +18,8 @@ public class GitLocally {
     // > git diff HEAD~1        和上一个指令效果一致
 
     // > git diff-tree -C -r ac... xns5... 比较两版提交之间的区别
+    //    -C	detect copies.
+    //    -r	diff recursively
 
     // > git add -u 添加所有的updates files to my staging area 暂存区(其中的改变将会在下一次的提交中添加)
     // > git add -A 添加所以的文件，包括没有追踪的文件
