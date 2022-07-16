@@ -1,14 +1,20 @@
+TODO: git权威指南
+https://git-scm.com/book/zh/v2
+https://devtut.github.io/git/#disclaimer
 
-注意fork的区别：
-Any public Git repository can be forked or cloned.
-A fork creates a completely independent copy of Git repository.
-Git clone creates a linked copy that will continue to synchronize with the target repository.
+TODO. 远程仓库创建好后，A机器(Project A) push提交后删除本地数据
+      如何从B机器(Project B) push提交到该仓库 ?
+1. git remote add origin https://...git               为B机器添加远程仓库
+2. git push                                           直接提交 Error
+3. git push --set-upstream origin main                指定提交到远端的main分支 Error
+   git push origin main
+4. git pull                                           将远端分支的数据"pull拉"下来，和本地的项目merge
+                                                      The “fatal: refusing to merge unrelated histories” Git error
+5. git pull origin master --allow-unrelated-histories 设置在"pull拉"下来的时候，允许合并不相关的历史记录
 
-> local my branch      日常小的更改和提交
-> remote my branch     大的更改和变动提交
-> remote master branch 如果要merge到master分组，需要提Create pull request，进行更改的确认
 
-TODO: Git工作项目实战指南
+
+TODO: Git工作实战指南
 本地修改，查看commit修改的文件和地方
 > git fetch                  获取到远程仓库的状态，不是最新的数据
 > git checkout master        切换到本地的master，同步远端
@@ -19,6 +25,6 @@ squarh 之前所有的提交，把本地做的修改的commit全部合成一个c
   git force push             在完成rebase之后，强制push到远端的指定分支上
 > merge to origin/master     pull request通过之后，merge到origin/master上面
 
-TODO: git权威指南
-https://git-scm.com/book/zh/v2
-https://devtut.github.io/git/#disclaimer
+> local my branch      日常小的更改和提交
+> remote my branch     大的更改和变动提交
+> remote master branch 如果要merge到master分组，需要提Create pull request，进行更改的确认

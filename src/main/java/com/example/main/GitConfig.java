@@ -1,6 +1,9 @@
 package com.example.main;
 
-// Git Init之后，在进行如下的配置
+// 注意fork的区别：
+//  Any public Git repository can be forked or cloned.
+//  A fork creates a completely independent copy of Git repository.
+//  Git clone creates a linked copy that will continue to synchronize with the target repository.
 public class GitConfig {
 
     // System level Config

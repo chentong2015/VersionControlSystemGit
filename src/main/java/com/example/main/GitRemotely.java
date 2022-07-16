@@ -18,6 +18,9 @@ public class GitRemotely {
     // > git remote rm origin 移除远端的仓库
     // > git remote add ...   添加远端的仓库
 
+    // > git remote add origin https://github.com/xxx.git  指定添加的远程仓库的名称
+    // > git remote add feature https://github.com/xxx.git 添加多个远程仓库，push时指定名称
+
     // > git branch 显示本地的分支
     // > git branch -r 显示远端的分支
 

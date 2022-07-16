@@ -8,7 +8,7 @@
 > git branch -D bug123 强制删除分支，即使分支没有被merge
 
 > git push origin master
-> git push origin new.branch 添加远端的新分支，并做push
+> git push origin new.branch     添加远端的新分支，并做push
 > git push origin :delete.branch 删除远端的分支
 > git push --force               强制push，覆盖掉远端分支
 
