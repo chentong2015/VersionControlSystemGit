@@ -12,8 +12,6 @@ TODO. 远程仓库创建好后，A机器(Project A) push提交后删除本地数
                                                       The “fatal: refusing to merge unrelated histories” Git error
 5. git pull origin master --allow-unrelated-histories 设置在"pull拉"下来的时候，允许合并不相关的历史记录
 
-
-
 TODO: Git工作实战指南
 本地修改，查看commit修改的文件和地方
 > git fetch                  获取到远程仓库的状态，不是最新的数据
