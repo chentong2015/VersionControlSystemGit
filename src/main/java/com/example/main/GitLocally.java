@@ -34,4 +34,6 @@ public class GitLocally {
 
     // > git clean -n
     // > git clean -f  移除掉新添加的，没有追踪的文件
+
+    // Test git revert
 }
