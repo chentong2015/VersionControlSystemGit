@@ -28,9 +28,7 @@ public class GitLocally {
     // > git reset --hard        撤回到前一个HEAD，撤销所有的修改
     // > git reset --soft HEAD~1 软撤回到指定的修改
     // > git reset --hard HEAD~1 撤回到上一次的commit提交的状态
-
-    // > git revert 912aaf....   撤销历史记录中的commit
-    // > git push                重新提交revert的更改到remote repository
+    // > get reset --hard origin/subsys/test
 
     // > git clean -n
     // > git clean -f  移除掉新添加的，没有追踪的文件
