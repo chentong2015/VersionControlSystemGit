@@ -21,6 +21,7 @@ public class GitConfig {
     // > git config -global help.autocorrect 1 等待1s之后执行，会自动识别和纠正错误的指令拼写
     // > git config -global --list  显示所有的用户系统设置
     // > cat ~/.gitconfig           配置出来的文件
+
     // > git config -global alias.lga "log --graph --oneline --all --decorate"
     // > git lga 自定义简单的别名来执行具有复杂的指令
 
