@@ -31,6 +31,7 @@ public class GitLocally {
 
     // > git revert 912aaf....   撤销历史记录中的commit
     // > git push                重新提交revert的更改到remote repository
+    // test
 
     // > git clean -n
     // > git clean -f  移除掉新添加的，没有追踪的文件
