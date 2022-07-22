@@ -1,3 +1,6 @@
 
 git rebase 合并分支，不保留分支的历史记录，有可能出现冲突
-get rebase origin/master 则会将本地的分支叠加到远端的master分支上，丢弃当前分支之前的历史记录
+> get rebase origin/master    将本地的分支叠加到远端master分支HEAD头上，丢弃当前分支历史记录
+
+checkout and rebase onto master
+> git rebase HEAD test-branch 在checkout到另一个分支的同时，rebase叠加到当前分支的HEAD头上
