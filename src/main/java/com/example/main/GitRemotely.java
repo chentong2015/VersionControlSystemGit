@@ -24,8 +24,11 @@ public class GitRemotely {
     // > git branch 显示本地的分支
     // > git branch -r 显示远端的分支
 
+    // TODO. fetch操作将拿到远程repository的状态(所有远程分支的状态)
+    //   并更新本地分支的remote关联, 可以避免提交到远程已经删除的branch分支上
     // > git fetch
     // > git merge
+
     // > git pull
     // > git pull --set-upstream master origin/master 定义分支的追踪
     //   Branch master set up to track remote branch master from origin
