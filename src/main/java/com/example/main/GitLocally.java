@@ -10,7 +10,6 @@ public class GitLocally {
     // > git commit -m "..."
     // > git commit -am "..." 合并add和commit两个操作
 
-    // > git log                查看提交的commit日志
     // > git diff --cached      比较暂存区Staging Area和Repository仓库的区别
     // > git diff dd68....      查看两版本提交之间的的区别
     // > git diff HEAD~1..HEAD  HEAD是最新提交的版本，diff查看的区别的是从前一版到HEAD的区别
@@ -37,4 +36,7 @@ public class GitLocally {
 
     // > git clean -n
     // > git clean -f  移除掉新添加的，没有追踪的文件
+
+    // > git log                查看提交的commit日志
+    // > git log -n             查看Top的几条commit
 }
