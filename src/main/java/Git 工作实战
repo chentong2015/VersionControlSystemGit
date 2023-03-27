@@ -1,0 +1,38 @@
+https://git-scm.com/book/zh/v2
+https://devtut.github.io/git/#disclaimer
+
+TODO: Git工作实战指南
+本地修改，查看commit修改的文件和地方
+> git fetch                  获取到远程仓库的状态，不是最新的数据
+> git checkout master        切换到本地的master，同步远端
+  git pull origin/master     获取远程master上的最新的更改数据
+> git checkout my-branch
+
+squash 之前所有的提交，把本地做的修改的commit全部合成一个commit
+
+> git rebase origin/master   将自己分支更改的东西，rebase在最新的master分支上，进行叠加
+  git force push             在完成rebase之后，强制push到远端的指定分支上
+> merge to origin/master     pull request通过之后，merge到origin/master上面
+
+> local my branch      日常小的更改和提交
+> remote my branch     大的更改和变动提交
+> remote master branch 如果要merge到master分组，需要提Create pull request，进行更改的确认
+
+
+TODO. 远程仓库创建好后, A机器(Project A)push提交后删除本地数据, 如何从B机器(Project B)push提交到该仓库 ?
+> git remote add origin https://...git               为B机器添加远程仓库
+> git push                                           直接提交 Error
+> git push --set-upstream origin main                指定提交到远端的main分支 Error
+> git push origin main
+> git push --force                                   强制提交到远程仓库，进行覆盖
+> git pull                                           将远端分支的数据"pull拉"下来，和本地的项目merge
+                                                     The “fatal: refusing to merge unrelated histories” Git error
+> git pull origin master --allow-unrelated-histories 设置在"pull拉"下来的时候，允许合并不相关的历史记录
+
+TODO. A机器上不同项目对应不同的远程仓库
+添加指定的远程仓库的链接，在提交时需要认证(Git授权管理: 用户名+密码)
+> git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git"
+> git pull
+> git push
+
+
