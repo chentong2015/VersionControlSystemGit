@@ -18,10 +18,4 @@
 > git stash apply                从暂存的list中取出暂存的状态，不移除list中的信息
 > git stash pop                  取出并移除list中信息
 
-> git merge     有可能出现冲突 !!
-> git mergetool 合并分支，解决Conflict的View工具 > KDiff3
-
-> git cherry-pick 6fa43245...    将指定分支的一个(历史)commit提取到当前分支
-  Copying a commit from one branch to another
-
 
