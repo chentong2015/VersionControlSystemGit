@@ -1,18 +1,10 @@
-本地修改，查看commit修改的文件和地方
 > git fetch                  获取到远程仓库的状态，不是最新的数据
 > git checkout master        切换到本地的master，同步远端
   git pull origin/master     获取远程master上的最新的更改数据
 > git checkout my-branch
-
-squash前面的提交，把本地做的修改的commit全部合成一个commit
-
-> git rebase origin/master   将自己分支更改的东西，rebase在最新的master分支上，进行叠加
+> git rebase origin/master   将当前分支的修改rebase到最新master分支进行叠加
   git force push             在完成rebase之后，强制push到远端的指定分支上
 > merge to origin/master     pull request通过之后，merge到origin/master上面
-
-> local my branch      日常小的更改和提交
-> remote my branch     大的更改和变动提交
-> remote master branch 如果要merge到master分组，需要提Create pull request，进行更改的确认
 
 TODO. 远程仓库创建好后, A机器(Project A)push提交后删除本地数据, 如何从B机器(Project B)push提交到该仓库 ?
 > git remote add origin https://...git               为B机器添加远程仓库
@@ -30,4 +22,13 @@ TODO. A机器上不同项目对应不同的远程仓库
 > git pull
 > git push
 
-
+TODO. 同一个PC上更换用户之后导致原始项目资源的Ownership(所有权)变化 ?
+ C:\Users\ctong>whoami 显示当前登录的用户
+$ git add .
+fatal: detected dubious ownership in repository at
+'D:/**/Spring Master/JavaSpringMaster' is owned by:
+    'S-1-5-21-1202660629-1993962763-839522115-56052'
+but the current user is:
+    'S-1-5-21-839522115-606747145-725345543-89708'
+To add an exception for this directory, call:
+    git config --global --add safe.directory 'D:/**/Spring Master/JavaSpringMaster'

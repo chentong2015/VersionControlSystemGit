@@ -1,0 +1,15 @@
+> git log 查看提交的commit日志
+> git log -n 查看Top的几条commit
+
+> git log --oneline
+> git log --oneline | wc -l 统计行数，项目总的提交次数
+> git log --oneline --graph 图形化显示日志
+> git shortlog  显示日志中所有提交的用户和提交的信息
+> git shortlog -sne Summary, Number of commit, Email 按照统计提交的次数来显示
+
+> git log --graph --oneline --all --decorate
+> git reflog 显示HEAD所在的reference的所有记录，用于找回之前的信息
+
+自定义简单的别名来执行具有复杂的指令
+> git config -global alias.lga "log --graph --oneline --all --decorate"
+> git lga

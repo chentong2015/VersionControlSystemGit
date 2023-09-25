@@ -32,6 +32,3 @@ TODO: HEAD始终在当前工作的分支上
 
 > git clean -n
 > git clean -f  移除掉新添加的，没有追踪的文件
-
-> git log                查看提交的commit日志
-> git log -n             查看Top的几条commit

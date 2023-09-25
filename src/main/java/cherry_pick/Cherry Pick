@@ -4,5 +4,5 @@
 4. 解决冲突之后再从changes里面提交commit
 5. 最后基于当前分支merge到master分支
 
-> git cherry-pick 6fa43245...    将指定分支的一个(历史)commit提取到当前分支
+> git cherry-pick 6fa43245...   将指定分支的(历史)commit提取到当前分支, 并作为一个新的commit记录
   Copying a commit from one branch to another

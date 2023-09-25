@@ -1,6 +1,8 @@
+master: m1 -> m2 -> m3 -> fix1
+test:  (m1 -> m2) -> fix1
 
 git rebase 合并分支，不保留分支的历史记录，有可能出现冲突
-> get rebase origin/master    将本地的分支叠加到远端master分支HEAD头上，丢弃当前分支历史记录
+> get rebase origin/master 将本地的分支叠加到远端master分支HEAD头上，丢弃当前分支历史记录
 
-checkout and rebase onto master
+checkout and rebase onto master => 等效于IDEA的UI界面操作 !!
 > git rebase HEAD test-branch 在checkout到另一个分支的同时，rebase叠加到当前分支的HEAD头上

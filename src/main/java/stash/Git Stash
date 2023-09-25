@@ -1,0 +1,5 @@
+Shelve and unshelve changes 切换到被的分支工作，保留当前分支的改变
+> git stash        暂时保存目前的工作信息和状态
+> git stash list
+> git stash apply  从暂存的list中取出暂存的状态，不移除list中的信息
+> git stash pop    取出并移除list中信息
