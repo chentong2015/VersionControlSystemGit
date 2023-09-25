@@ -1,0 +1,21 @@
+https://git-scm.com/book/zh/v2
+https://devtut.github.io/git/#disclaimer
+
+Windows64: 下载GitBash
+C:\Program Files\Git\mingw64\share\doc\git-doc 提供完整的指令文档
+
+IntelliJ IDEA: Git + Commit + Terminal 组件UI界面操作
+Version Control: 对于没有版本控制系统的项目，则看不到Git + Commit的页面
+
+TODO. Git三大远程代码托管仓库Repository: Github, BitBucket, GitLab
+- Github 主要面向开源库，面向公司及个人使用
+  Pull Requests
+  Github Insights 查看代码进展以及贡献行数
+
+- BitBucket 面向企业项目开发
+  Pull Requests
+  https://www.atlassian.com/git/tutorials
+
+- GitLab 面向企业项目开发
+  Merge Requests
+  https://docs.gitlab.com/ee/user/

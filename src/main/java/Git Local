@@ -1,5 +1,4 @@
 TODO: HEAD始终在当前工作的分支上
-
 > Git init 创建一个.git/仓库，其中包含所有的metadata
 > echo "hell, git" > README.txt
 

@@ -20,16 +20,16 @@
 > git branch 显示本地的分支
 > git branch -r 显示远端的分支
 
-TODO. fetch操作将拿到远程repository的状态(所有远程分支的状态)
-  并更新本地分支的remote关联, 可以避免提交到远程已经删除的branch分支上
+TODO. fetch操作会拿到远程repository的状态(所有远程分支的状态, 例如获取远程分支被删除的情况)
+      并更新本地分支的remote关联, 可以避免提交到远程已经删除的branch分支上
 > git fetch
-> git merge
+> git merge  合并分支的方式有多种情况, 例如Fast-Forward
 
 > git pull
 > git pull --set-upstream master origin/master 定义分支的追踪
   Branch master set up to track remote branch master from origin
 > git pull origin master 注明要pull的分支
-    如果这里使用SSH协议，则不要使用SSH key来完成认证，而不是HTTP的密码
+  如果这里使用SSH协议，则不要使用SSH key来完成认证，而不是HTTP的密码
 
 Work with tags
 > git tag 显示所有标记的标签

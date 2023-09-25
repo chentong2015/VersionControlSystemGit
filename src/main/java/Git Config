@@ -1,4 +1,5 @@
-clone和fork的区别：Any public Git repository can be forked or cloned.
+clone和fork的区别：
+Any public Git repository can be forked or cloned.
 - A fork creates a completely independent copy of Git repository.
 - Git clone creates a linked copy that will continue to synchronize with the target repository.
 
