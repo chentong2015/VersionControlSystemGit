@@ -1,4 +1,0 @@
-实战场景：
-涉及多分支的项目，其它组修改本组的代码并不会运行本组的java pipeline
-导致本组的Master Branch分支不会运行SonarQube的代码验证，SonarQube对应项目不会报错
-导致本组分支在刷新获取到变更之后，会看到SonarQube检查到的代码质量问题
