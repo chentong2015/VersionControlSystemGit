@@ -1,0 +1,18 @@
+> git branch 显示本地的分支
+> git branch -r 显示远端的分支
+> git branch fix1 创建新的分支
+> git checkout fix1 切换到新的分支
+
+> git branch -m fix1 bug123 重命名分支名称
+> git branch -d bug123 删除分支
+> git branch -D bug123 强制删除分支，即使分支没有被merge
+
+> git branch                   # 显示本地分支
+> git branch --contains 50089  # 显示包含提交50089的分支
+> git branch -a                # 显示所有分支(包括远端的)
+> git branch -r                # 显示所有remote分支
+> git branch --merged          # 显示所有已合并到当前分支的分支
+> git branch --no-merged       # 显示所有未合并到当前分支的分支
+
+> git show-branch              # 图示当前分支历史
+> git show-branch --all        # 图示所有分支历史

@@ -17,7 +17,8 @@ TODO. 远程仓库创建好后, A机器(Project A)push提交后删除本地数�
 > git pull origin master --allow-unrelated-histories 设置在"pull拉"下来的时候，允许合并不相关的历史记录
 
 TODO. A机器上不同项目对应不同的远程仓库
-添加指定的远程仓库的链接，在提交时需要认证(Git授权管理: 用户名+密码)
+添加指定的远程仓库的链接(使用具体的username=chentong2015,具体的项目repo名称)
+在提交时需要认证(Git授权管理: 用户名+密码)
 > git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git"
 > git pull
 > git push

@@ -1,0 +1,4 @@
+Revert能够将提交的commit进行撤销，将撤销后的changelist再提交，追加到历史记录中
+
+> git revert 912aaf....   撤销历史记录中的commit
+> git push                重新提交revert的更改到remote repository

@@ -1,0 +1,16 @@
+> git diff --cached      比较暂存区Staging Area和Repository仓库的区别
+> git diff dd68....      查看两版本提交之间的的区别
+> git diff HEAD~1..HEAD  HEAD是最新提交的版本，diff查看的区别的是从前一版到HEAD的区别
+> git diff HEAD~1..      和上一个指令效果一致
+> git diff HEAD~1        和上一个指令效果一致
+
+> git diff                              # 显示所有未添加至index的变更
+> git diff --cached                     # 显示所有已添加index但还未commit的变更
+> git diff HEAD^                        # 比较与上一个版本的差异
+> git diff HEAD -- ./lib                # 比较与HEAD版本lib目录的差异
+> git diff origin/master..master        # 比较远程分支master上有本地分支master上没有的
+> git diff origin/master..master --stat # 只显示差异的文件，不显示具体内容
+
+> git diff-tree -C -r ac... xns5... 比较两版提交之间的所有区别(适用于提交量过大的场景)
+  -C  detect copies
+  -r  diff recursively

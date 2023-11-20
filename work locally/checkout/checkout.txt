@@ -1,0 +1,10 @@
+> git checkout file.txt  撤回之前的修改，恢复到变化之前
+
+> git checkout -b master_copy            # 从当前分支创建新分支master_copy并切换分支
+> git checkout -b master master_copy     # 上面的完整版
+> git checkout features/performance      # 切换分支已存在的features/performance分支
+> git checkout --track hotfixes/BJVEP933 # 切换分支远程分支hotfixes/BJVEP933并创建本地跟踪分支
+
+> git checkout v2.0                      # 切换分支版本v2.0
+> git checkout -b devel origin/develop   # 从远程分支develop创建新本地分支devel并切换分支
+> git checkout -- README                 # 切换分支head版本的README文件(可用于修改错误回退)

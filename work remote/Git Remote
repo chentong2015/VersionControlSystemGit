@@ -18,8 +18,9 @@
 > git push origin :delete.branch 删除远端的分支
 > git push --force               强制push，覆盖掉远端分支
 
-TODO. fetch操作会拿到远程repository的状态(所有远程分支的状态, 例如获取远程分支被删除的情况)
-      并更新本地分支的remote关联, 可以避免提交到远程已经删除的branch分支上
+TODO. Fetch+Merge
+fetch操作会拿到远程repository的状态(所有远程分支的状态, 例如获取远程分支被删除的情况)
+并更新本地分支的remote关联, 可以避免提交到远程已经删除的branch分支上
 > git fetch
 > git merge  合并分支的方式有多种情况, 例如Fast-Forward
 

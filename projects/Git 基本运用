@@ -1,6 +1,3 @@
-Windows64: 下载GitBash
-C:\Program Files\Git\mingw64\share\doc\git-doc 提供完整的指令文档
-
 IntelliJ IDEA: Git + Commit + Terminal 组件UI界面操作
 Version Control: 对于没有版本控制系统的项目，则看不到Git + Commit的页面
 
@@ -24,3 +21,4 @@ TODO. Git三大远程代码托管仓库Repository: Github, BitBucket, GitLab
 
 https://git-scm.com/book/en/v2
 https://devtut.github.io/git/#disclaimer
+C:\Program Files\Git\mingw64\share\doc\git-doc GitBash完整的指令文档

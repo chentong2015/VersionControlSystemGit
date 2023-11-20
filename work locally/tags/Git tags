@@ -1,6 +1,8 @@
-Work with tags
 > git tag 显示所有标记的标签
-> git tag v1.0
+> git tag v1.0  显示v1.0的日志及详细内容
+> git tag -a v2.0 -m 'xxx'                                  # 增加v2.0的tag
+> git log v2.0                                              # 显示v2.0的日志
+
 > git tag -a v1.0_with_message 给声明的tag提供信息
 > git tag -S v1.0_signed
   Enter passphrase: *** 提供密码来签名
