@@ -25,6 +25,8 @@ fetch操作会拿到远程repository的状态(所有远程分支的状态, 例�
 > git merge  合并分支的方式有多种情况, 例如Fast-Forward
 
 > git pull
+> git pull --rebase 从远程分支拉changes下来，然后将本地分支的变更叠加在上面
+
 > git pull --set-upstream master origin/master 定义分支的追踪
   Branch master set up to track remote branch master from origin
 > git pull origin master 注明要pull的分支
