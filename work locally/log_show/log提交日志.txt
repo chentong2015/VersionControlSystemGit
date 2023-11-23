@@ -1,18 +1,19 @@
 > git log 查看提交的commit日志
 > git log -n 查看Top的几条commit
-
 > git log --stat 显示提交日志及相关变动文件(查看每次提交的changelist变动)
 
 > git log --oneline
 > git log --oneline | wc -l 统计行数，项目总的提交次数
 > git log --oneline --graph 图形化显示日志
-> git shortlog  显示日志中所有提交的用户和提交的信息
-> git shortlog -sne Summary, Number of commit, Email 按照统计提交的次数来显示
-
 > git log --graph --oneline --all --decorate
-> git reflog 显示HEAD所在的reference的所有记录，用于找回之前的信息
+
+> git shortlog 将log以适合的公告格式进行输出，每个提交将按作者和标题分组
+> git shortlog -sne Summary, Number of commit, Email 按照统计提交的次数来显示
+> git reflog   显示HEAD所在的reference的所有记录，用于找回之前的信息
 
 > git show dfb02e6e4*** 显示某个提交的详细内容
 > git show dfb02        可只用commitid的前几位
 > git show HEAD         显示HEAD提交日志
 > git show HEAD^        显示HEAD的父(上一个版本)的提交日志 ^^为上两个版本 ^5为上5个版本
+
+> git whatchanged  显示提交历史对应的文件修改

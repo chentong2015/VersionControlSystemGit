@@ -38,3 +38,9 @@ R
 "work locally/checkout/checkout.txt,7\f\7f8b2049e9f283d76abaa23788bdda6bb6f3c9e0
 T
 $work locally/branch/Git branch操作,1\0\1034777505b0aa467c3fd5afb4335632d56c138b
+F
+work remote/Git Remote,3\4\34a270f9906c9091c205a100ad45e238029dc15e
+T
+$work locally/rebase/Git rebase操作,6\0\609aabf90b0ad2664bd94820cedabfc0a1fc8628
+X
+(work locally/reset/reset重写记录.txt,4\1\41bf65ce1b67b3bcaaeecbb7c91e5595cece3c74
