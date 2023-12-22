@@ -31,3 +31,13 @@ fetch操作会拿到远程repository的状态(所有远程分支的状态, 例�
   Branch master set up to track remote branch master from origin
 > git pull origin master 注明要pull的分支
   如果这里使用SSH协议，则不要使用SSH key来完成认证，而不是HTTP的密码
+
+TODO. 远程仓库创建好后, A机器push提交后删除本地数据, 如何从B机器push提交到该仓库 ?
+> git remote add origin https://...git               为B机器添加远程仓库
+> git push                                           直接提交 Error
+> git push --set-upstream origin main                指定提交到远端的main分支 Error
+> git push origin main
+> git push --force                                   强制提交到远程仓库，进行覆盖
+> git pull                                           将远端分支的数据"pull拉"下来，和本地的项目merge
+                                                     The “fatal: refusing to merge unrelated histories” Git error
+> git pull origin master --allow-unrelated-histories 设置在"pull拉"下来的时候，允许合并不相关的历史记录

@@ -1,8 +1,0 @@
-TODO. 使用SSH替换HTTPS, 必须提供公共的SSH Keys(公钥), 私钥自己保管
-$ ssh-keygen 生成公钥和私钥对，Public Key需要提供到GitHub
-
-1. Adding a new SSH key
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-
-2. Managing remote repositories
-https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh

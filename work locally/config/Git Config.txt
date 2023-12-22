@@ -6,7 +6,7 @@ User level Config: 重写上一层的配置
 1. git config --global
 2. ~/.gitconfig or c:\User\<Name>\.gitconfig
 
-   > git config -global user.name
+   > git config -global user.name 首次commit提交前需要设置用户信息
    > git config -global user.email
    > git config -global core.editor vim
    > git config -global help.autocorrect 1 等待1s之后执行，会自动识别和纠正错误的指令拼写
