@@ -11,20 +11,19 @@ $ git add .
   To add an exception for this directory, call:
     git config --global --add safe.directory 'D:/**/Spring Master/JavaSpringMaster'
 
-
 TODO. Git三大远程代码托管仓库Repository: Github, BitBucket, GitLab
-- Github 主要面向开源库，面向公司及个人使用
+- Github 面向开源库，面向公司及个人使用
   Pull Requests
   Github Insights 查看代码进展以及贡献行数
-
 - BitBucket 面向企业项目开发
   Pull Requests
   https://www.atlassian.com/git/tutorials
-
 - GitLab 面向企业项目开发
   Merge Requests
   https://docs.gitlab.com/ee/user/
 
-https://git-scm.com/book/en/v2
 https://devtut.github.io/git/#disclaimer
 C:\Program Files\Git\mingw64\share\doc\git-doc GitBash完整的指令文档
+
+https://git-scm.com/book/en/v2
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging 分支合并fast-forward !!

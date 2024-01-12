@@ -1,0 +1,52 @@
+TODO. Git pull默认操作为merge，并不会执行rebase
+% git pull origin main
+  hint:   git config pull.rebase false  # merge
+  hint:   git config pull.rebase true   # rebase
+  hint:   git config pull.ff only       # fast-forward only
+1. You can replace "git config" with "git config --global" to set a default preference for all repositories.
+2. You can also pass --rebase, --no-rebase, or --ff-only on the command line to override the configured default per invocation.
+
+TODO. 从远程分支pull变更，并将本地新的commit rebase到head
+  当出现文件合并的conflicts时，三种处理的办法，修改fix时注意是否在当前main分支 ！！
+% git pull --rebase=true
+  Auto-merging ...
+  CONFLICT (content): Merge conflict in ...
+  Auto-merging ...
+  CONFLICT (content): Merge conflict in ...
+  error: could not apply 8115b32... ‘refresh project on mac os’
+1. Resolve all conflicts manually, mark them as resolved with "git add/rm <conflicted_files>",
+   then run "git rebase --continue".
+2. You can instead skip this commit: run "git rebase --skip".
+3. To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+TODO. 状态显示
+本地新的commit提交是否正在rebase到远程拉下来的变更
+其中一部分文件处于Index阶段并等待提交，其余有conflict的文件需要fix后，重新git add
+% git status
+tongchen@TONGs-MacBook-Pro CICDJenkinsPipelineProject % git status
+interactive rebase in progress; onto d63521d
+Last command done (1 command done):
+   pick 8115b32 'refresh project on mac os'
+No commands remaining.
+You are currently rebasing branch 'main' on 'd63521d'.
+  (all conflicts fixed: run "git rebase --continue")
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   jenkins/Pipeline Groovy Master
+        modified:   pipelines/jenkinsfile/hello world
+        ...
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   "jenkins/Jenkins\345\237\272\347\241\200\345\205\245\351\227\250.txt"
+        modified:   "jenkins/plugins/Jenkins\346\217\222\344\273\266\347\256\241\347\220\206.txt"
+
+TODO. 恢复rebase并最后push提交
+% git add <file>
+% git rebase --continue
+  "refresh project on mac os with rebasing" 设置rebase的提交信息,可以使用本地commit提交信息
+  ...
+  Successfully rebased and updated refs/heads/main.
+
