@@ -1,0 +1,42 @@
+TODO. Git的配置分为三层，每一层覆盖上层配置
+1. System level Config
+   > git config --system
+   c:\Program Files\Git\gitconfig | /etc/gitconfig 配置文件路径
+
+2. User level Config
+   > git config --global
+   > git config -global user.name  TODO. 新Git首次commit提交前必须设置用户信息
+   > git config -global user.email
+   > git config -global core.editor vim
+   > git config -global help.autocorrect 1 等待1s之后执行，会自动识别和纠正错误的指令拼写
+   > git config -global --list  显示所有的用户系统设置
+
+   > git config -global color.ui auto  使得输出的显示带颜色
+   > git config --global color.status auto
+   > git config --global color.diff auto
+   > git config --global color.branch auto
+   > git config --global color.interactive auto
+
+   c:\User\<Name>\.gitconfig | ~/.gitconfig TODO. 配置文件路径
+   > cat ~/.gitconfig
+   [user]
+         email = xxxx@gmail.com
+         name = chen tong
+
+   > git config -global alias.lga "log --graph --oneline --all --decorate"
+   > git lga  自定义简单的别名来执行具有复杂的指令
+
+3. Repository Level Configuration 只针对某个Repo级别的配置
+   > git config
+   > git config user.name "chen tong"
+   > git config --unset user.name 取消指定的设置
+   > git config --list 显示当前配置信息
+
+   > vim .git/config  TODO. 查看当前Repo下的配置文件信息
+   [core]
+         repositoryformatversion = 0
+         filemode = true
+         bare = false
+         logallrefupdates = true
+         ignorecase = true
+         precomposeunicode = true
