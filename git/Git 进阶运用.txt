@@ -1,0 +1,22 @@
+TODO. 同PC上更换用户之后导致原始项目资源Ownership变化? 必须配置并选择信任项目目录
+> C:\Users\ctong>whoami 显示当前登录的用户
+$ git add .
+  fatal: detected dubious ownership in repository at
+    'D:/**/Spring Master/JavaSpringMaster' is owned by: 'S-1-5-21-120***'
+  but the current user is: 'S-1-5-21-8395221***'
+  To add an exception for this directory, call:
+     git config --global --add safe.directory 'D:/**/Spring Master/JavaSpringMaster'
+
+
+https://devtut.github.io/git/#disclaimer
+C:\Program Files\Git\mingw64\share\doc\git-doc GitBash完整的指令文档
+
+https://git-scm.com/book/en/v2
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging 分支合并fast-forward !!
+
+TODO. Git补充文档教程
+https://www.youtube.com/watch?v=PN1k1CLXtlw
+
+https://gist.github.com/guweigang/9848271
+https://juejin.cn/post/7021023267028729887
+https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
