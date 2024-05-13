@@ -1,12 +1,12 @@
-Windows环境配置：
+Windows环境配置
 下载git和git Bash并在IDEA中使用
 
-TODO：MacOS环境配置
+MacOS环境配置
 https://git-scm.com/download/mac
 安装Xcode将会自动安装git：默认安装路径如下
 /usr/bin/git 该环境路径将会被自动检测
 /Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git
 
-TODO: Linux服务器环境
+Linux服务器环境
 > sudo apt-get update
 > sudo apt-get install git
