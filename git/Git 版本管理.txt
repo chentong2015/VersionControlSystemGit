@@ -1,0 +1,17 @@
+Windows: 下载git和git Bash并在IDEA中使用
+
+MacOS: https://git-scm.com/download/mac
+/usr/bin/git 该环境路径将会被自动检测
+Xcode自动安装git: /Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git
+
+Linux服务器环境: sudo apt-get install git
+
+TODO. Git补充文档教程
+https://git-scm.com/book/en/v2
+https://devtut.github.io/git/#disclaimer
+C:\Program Files\Git\mingw64\share\doc\git-doc
+
+https://www.youtube.com/watch?v=PN1k1CLXtlw
+https://gist.github.com/guweigang/9848271
+https://juejin.cn/post/7021023267028729887
+https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html

@@ -1,7 +1,9 @@
 > git checkout file.txt  撤回之前的修改，恢复到变化之前
 
 > git checkout -b master_copy            # 从当前分支创建新分支master_copy并切换分支
-> git checkout -b master master_copy     # 上面的完整版
+  > git branch master_copy               # 等效于如下两个命令
+  > git checkout master_copy
+
 > git checkout features/performance      # 切换分支已存在的features/performance分支
 > git checkout --track hotfixes/BJVEP933 # 切换分支远程分支hotfixes/BJVEP933并创建本地跟踪分支
 

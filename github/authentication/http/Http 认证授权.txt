@@ -14,4 +14,3 @@ TODO. Github提供两种基于Http认证的方式
   Password for 'https://chentong2015@github.com': API-Token
 
 > git remote set-url origin https://API-Token@github.com/chentong2015/project-name.git
-> git push

@@ -7,15 +7,12 @@ TODO. Fetch+Merge
 fetch操作会拿到远程repository的状态(所有远程分支的状态, 例如获取远程分支被删除的情况)
 并更新本地分支的remote关联, 可以避免提交到远程已经删除的branch分支上
 > git fetch
-> git merge  合并分支的方式有多种情况, 例如Fast-Forward
+> git merge
 
-> git pull
-> git pull --rebase 从远程分支拉changes下来，然后将本地分支的变更叠加在上面
-
+> git pull 等效于fetch+merge
 > git pull --set-upstream master origin/master 定义分支的追踪
   Branch master set up to track remote branch master from origin
-> git pull origin master 注明要pull的分支
-  如果这里使用SSH协议，则不要使用SSH key来完成认证，而不是HTTP的密码
+> git pull origin master
 
 TODO. 远程仓库创建好后, A机器push提交后删除本地数据, 如何从B机器push提交到该仓库 ?
 > git remote add origin https://...git 为B机器添加远程仓库

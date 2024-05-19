@@ -1,0 +1,17 @@
+TODO: git rebase 以追加的方式合并分支
+1. 通过rebase合并将不保留分支的历史记录
+2. 通过rebase进行合并同样有可能出现冲突
+master: m1 -> m2 -> m3 -> fix1
+test:  (m1 -> m2) -> fix1 新的变更被追加到master
+
+Case 1: 远端分支由于被追加其他的变更，导致当前分支无法push
+将本地的分支叠加到远端master分支上，丢弃当前分支的历史记录，然后再push
+> get rebase origin/master
+
+Case 2: 本地新添加的fix需要叠加到master的最新变更上，才能提交pull request
+rebase测试分支并将其叠加到当前分支HEAD上，并切换到test分支 => 等效于IDEA的UI界面操作
+> git rebase HEAD test
+
+Case 3: 将远程分支最新的changes拉下来，然后将本地分支变更叠加在上面
+> git pull --rebase
+> git rebase --abort 由于冲突的产生，撤销rebase操作
