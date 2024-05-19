@@ -1,3 +1,2 @@
 GitLab 面向企业项目开发
-  - Merge Requests
-  - https://docs.gitlab.com/ee/user/
+https://docs.gitlab.com/ee/user/
