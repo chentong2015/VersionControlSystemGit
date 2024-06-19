@@ -13,5 +13,5 @@ rebase测试分支并将其叠加到当前分支HEAD上，并切换到test分支
 > git rebase HEAD test
 
 Case 3: 将远程分支最新的changes拉下来，然后将本地分支变更叠加在上面
-> git pull --rebase
+> git pull --rebase=true
 > git rebase --abort 由于冲突的产生，撤销rebase操作
