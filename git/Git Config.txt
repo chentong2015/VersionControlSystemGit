@@ -1,3 +1,10 @@
+Windows下载git和git Bash并在IDEA中使用
+Linux命令行sudo apt-get install git
+
+MacOS Xcode自动安装git, /usr/bin/git 该环境路径将会被自动检测
+https://git-scm.com/download/mac
+
+
 TODO. Git的配置分为三层，每一层覆盖上层配置
 1. System level Config 针对整个Git系统层面的配置
    C:\Program Files\Git\gitconfig

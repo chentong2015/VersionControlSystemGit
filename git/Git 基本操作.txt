@@ -1,8 +1,9 @@
-Windows下载git和git Bash并在IDEA中使用
-Linux命令行sudo apt-get install git
+> git clean -n
+> git clean -f 移除掉新添加的，没有追踪的文件
 
-MacOS Xcode自动安装git, /usr/bin/git 该环境路径将会被自动检测
-https://git-scm.com/download/mac
+> git rm 删除index中的文件
+> git rm -r * 递归删除
+
 
 TODO. Git补充文档教程
 https://git-scm.com/book/en/v2

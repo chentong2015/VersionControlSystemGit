@@ -1,11 +1,11 @@
 Github 面向开源库，面向公司及个人使用
-  - Pull Requests
-  - Github Insights 查看代码进展以及贡献行数
+- Pull Requests
+- Github Insights 查看代码进展以及贡献行数
 
 clone和fork的区别:
 Any public Git repository can be forked or cloned.
-  - A fork creates a completely independent copy of Git repository.
-  - Git clone creates a linked copy that will continue to synchronize with the target repository.
+- A fork creates a completely independent copy of Git repository.
+- Git clone creates a linked copy that will continue to synchronize with the target repository.
 
 > git clone ....git 克隆项目的所有版本信息，历史记录
   如果使用HTTP协议，需要提供用户名称和密码
