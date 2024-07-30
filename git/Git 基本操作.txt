@@ -4,6 +4,12 @@
 > git rm 删除index中的文件
 > git rm -r * 递归删除
 
+"error: cannot lock ref 'refs/tags/v2.8': 'refs/tags' exists"
+> git update-ref -d refs/tags
+> git remote prune origin
+> git fetch --prune origin
+> git pull
+
 
 TODO. Git补充文档教程
 https://git-scm.com/book/en/v2
@@ -14,3 +20,4 @@ https://www.youtube.com/watch?v=PN1k1CLXtlw
 https://gist.github.com/guweigang/9848271
 https://juejin.cn/post/7021023267028729887
 https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+https://dev.to/gauri1504/mastering-version-control-with-git-beyond-the-basics-44ib

@@ -5,6 +5,7 @@ fetch操作会拿到远程repository的状态(所有远程分支的状态, 例�
 在fetch之前删除不存在的远程分支追踪, 然后从远程分支拉更新
 Before fetching, remove any remote-tracking references that no longer exist on the remote.
 > git fetch --prune
+> git fetch --prune origin
 
 将fetch下来的更新合并到分支
 > git merge
