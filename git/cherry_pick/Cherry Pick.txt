@@ -1,8 +1,8 @@
-1. 选择指定的commit id进行cherry pick
-2. cherry pick会基于当前的分支做修改
-3. cherry pick在生成需改到changes里面的时候可能会有conflicts
-4. 解决冲突之后再从changes里面提交commit
-5. 最后基于当前分支merge到master分支
-
-> git cherry-pick 6fa43245...   将指定分支的(历史)commit提取到当前分支, 并作为一个新的commit记录
+选择某分支的某个提交进行cherry pick
+将指定分支的(历史)commit提取到当前分支, 并作为一个新的commit记录
+> git cherry-pick 6fa43245...
   Copying a commit from one branch to another
+
+cherry pick在生成需改到changes里面的时候可能会有conflicts
+解决冲突之后再选择继续
+> git cherry-pick --continue
