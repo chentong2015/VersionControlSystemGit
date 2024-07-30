@@ -7,4 +7,3 @@
 > git commit --amend -m 'xxx' 合并上一次提交(用于反复修改)
 
 > git commit --amend 修正上一次提交的message信息
-  Ctrl+C + :wq 保存并推出git vim编辑

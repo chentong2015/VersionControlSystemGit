@@ -1,4 +1,5 @@
-> git checkout file.txt  撤回之前的修改，恢复到变化之前
+TODO. checkout可用于撤销工作区的文件变更
+> git checkout file.txt 撤销指定文件的变更
 
 > git checkout -b master_copy            # 从当前分支创建新分支master_copy并切换分支
   > git branch master_copy               # 等效于如下两个命令

@@ -10,6 +10,9 @@
 > git fetch --prune origin
 > git pull
 
+"Git Vim Editor"
+Ctrl+C + :wq 保存并推出git vim编辑
+
 
 TODO. Git补充文档教程
 https://git-scm.com/book/en/v2
