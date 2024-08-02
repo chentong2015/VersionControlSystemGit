@@ -1,0 +1,16 @@
+> git clean -n
+> git clean -f 移除掉新添加的，没有追踪的文件
+
+> git rm 删除index中的文件
+> git rm -r * 递归删除
+
+> git rev-parse --verify HEAD 获取当前分支最新提交的ID
+
+"error: cannot lock ref 'refs/tags/v2.8': 'refs/tags' exists"
+> git update-ref -d refs/tags
+> git remote prune origin
+> git fetch --prune origin
+> git pull
+
+"Git Vim Editor"
+Ctrl+C + :wq 保存并推出git vim编辑
