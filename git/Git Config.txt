@@ -14,11 +14,9 @@ TODO. Git的配置分为三层，每一层覆盖上层配置 test
 
 2. User level Config 针对User用户层面所有Repo配置
    C:\User\<Name>\.gitconfig | ~/.gitconfig
-      > cat ~/.gitconfig
       [user]
+         name = ctong
          email = xxxx@gmail.com
-         name = chen tong
-
    > git config --global --list     显示用户层面的系统设置
    > git config --global user.name  首次commit提交前必须设置用户信息 !
    > git config --global user.email
