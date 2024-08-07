@@ -19,12 +19,11 @@ TODO. Git的配置分为三层，每一层覆盖上层配置 test
          email = xxxx@gmail.com
          name = chen tong
 
-   > git config --global
-   > git config --global user.name  TODO. 新Git首次commit提交前必须设置用户信息
+   > git config --global --list     显示用户层面的系统设置
+   > git config --global user.name  首次commit提交前必须设置用户信息 !
    > git config --global user.email
    > git config --global core.editor vim
    > git config --global help.autocorrect 1 等待1s之后执行，会自动识别和纠正错误的指令拼写
-   > git config --global --list  显示所有的用户系统设置
 
    > git config --global color.ui auto  使得输出的显示带颜色
    > git config --global color.status auto
