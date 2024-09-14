@@ -1,4 +1,4 @@
-Reset能够重写git commits历史记录，通过回撤修改提交的记录
+Reset重置：重写git commits历史记录，通过回撤修改提交的记录
 
 > git reset HEAD^ --soft (Save your changes, back to last commit)
 > git reset HEAD~1 --soft 软撤回到前两个commit状态

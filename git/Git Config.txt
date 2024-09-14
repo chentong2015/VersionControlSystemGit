@@ -1,12 +1,7 @@
-Windows下载git和git Bash并在IDEA中使用
-Linux命令行sudo apt-get install git
-
-MacOS Xcode自动安装git, /usr/bin/git 该环境路径将会被自动检测
-https://git-scm.com/download/mac
-
 TODO. Git的配置分为三层，每一层覆盖上层配置
 1. System level Config 针对整个Git系统层面配置
    C:Git/etc/gitconfig
+
    > git config --system
 
 2. User level Config 针对User用户层面所有Repo配置
@@ -36,7 +31,6 @@ TODO. Git的配置分为三层，每一层覆盖上层配置
        'D:/project_folder' is owned by: 'S-1-5-21-120***' but the current user is: 'S-1-5-21-8395221***'
 
 3. Repository Level Configuration 针对某个Repo级别配置，如果设置则使用Global配置
-   > git config
    > git config user.name "chen tong"
    > git config user.email "chen@gmail.com"
    > git config --unset user.name 取消指定的设置

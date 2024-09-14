@@ -1,6 +1,7 @@
 Github 面向开源库，面向公司及个人使用
 - Pull Requests
 - Github Insights 查看代码进展以及贡献行数
+- Github Contributions 只要提交到Repo的邮箱是创建Repo的用户邮箱，则统计提交贡献数
 
 clone和fork的区别:
 Any public Git repository can be forked or cloned.
@@ -20,4 +21,4 @@ Any public Git repository can be forked or cloned.
 > git remote add feature https://github.com/xxx.git 添加多个远程仓库，push时指定名称
 
 > git remote rename origin destination 更改远程仓库的名称
-# Change remote name from 'origin' to 'destination'
+  # Change remote name from 'origin' to 'destination'
