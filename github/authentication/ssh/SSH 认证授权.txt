@@ -1,16 +1,13 @@
-TODO. 使用SSH替换HTTPS, 必须提供公共的SSH Keys(公钥), 私钥自己保管
-$ ssh-keygen 生成公钥和私钥对，Public Key需要提供到GitHub
+TODO. Github支持基于SSH认证的方式
+生成公钥和私钥对，并将Public Key提供到GitHub，Private Key用户本地路径保存
 
-1. Adding a new SSH key
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-
-2. Managing remote repositories
-https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh
-
-连接Linux和Git：将SSH公钥证书注册到github上面，私钥证书私有保存
-Github > Settings > SSH and GPG keys > new SSH Keys
-   title : linuxEnv
-   add the file : id_rsa.pub
-
-用Linux连接到github(使用SSH确认github可以成功的连接)
+生成SSH密钥对 + Gitbub添加公钥证书 + 验证生成(用户路径文件)
+> ssh-keygen -t rsa -C "xxx@gmail.com"
+> cd ~/.ssh/
+> ls -l
+  /Users/tongchen/.ssh/id_rsa
+  /Users/tongchen/.ssh/id_rsa.pub
 > ssh git@github.com
+  /Users/tongchen/.ssh/known_hosts
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
