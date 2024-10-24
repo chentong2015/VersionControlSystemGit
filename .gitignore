@@ -7,6 +7,9 @@ target/*
 out/
 .classpath
 
-#intellij idea 相关的配置文件
+#intellij idea
 .idea
 *.iml
+
+# Mac-specific hidden file
+**/.DS_Store
