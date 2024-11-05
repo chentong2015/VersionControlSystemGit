@@ -5,7 +5,7 @@
 
 TODO. 远程仓库创建好后, A机器push提交后删除本地数据, 如何从B机器push提交到该仓库 ?
 > git remote add origin https://...git 为B机器添加远程仓库
-> git push                             直接提交 Error
+> git push
 > git push --set-upstream origin main  指定提交到远端的main分支 Error
 > git push origin main
-> git push --force                     强制提交到远程仓库，进行覆盖
+> git push --force 强制提交到远程仓库，进行覆盖
