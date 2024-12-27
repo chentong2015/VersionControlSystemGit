@@ -1,0 +1,11 @@
+Defect/Fix迁移设计: 从一个分支迁移到另一个分支(Cherry-Pick)
+
+TODO. 使用自定迁移工具进行实现: 无需手动迁移和手动测试
+1. 提供要迁移的版本信息
+   Source_Version: 1.0.1.x
+   Source_Defects: OK0819, OK1321,,
+   Target_Version: 1.3.6.x
+2. 工具自动将原始版本的Defects取出合并
+3. 将合并后的变更添加到目标分支
+   - 添加失败: 手动解决合并Conflicts
+   - 添加成功: 自动开启CD集成测试
