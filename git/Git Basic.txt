@@ -5,7 +5,7 @@ MacOS Xcode自动安装git, /usr/bin/git 该环境路径将会被自动检测
 https://git-scm.com/download/mac
 
 "Git Vim Editor"
-Ctrl+C + :wq 保存并推出git vim编辑
+Ctrl+C + :wq 保存并退出
 
 --------------------------------------------------------------
 TODO. Git Workflow 版本工作流

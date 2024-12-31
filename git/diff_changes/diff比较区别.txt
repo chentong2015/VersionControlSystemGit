@@ -1,0 +1,18 @@
+> git diff               显示未添加至Stage的变更(还未add的变更)
+> git diff --cached      比较已添加Stage但还未commit的变更
+> git diff --cached      比较暂存区Stage和Repo仓库的区别
+
+> git diff HEAD~1..HEAD  diff查看的区别是从前一版到HEAD的区别
+> git diff HEAD~1..      和上一个指令效果一致
+> git diff HEAD~1        和上一个指令效果一致
+
+> git diff HEAD^         比较与上一个版本的差异
+> git diff HEAD -- ./lib 比较与HEAD版本lib目录的差异
+> git diff dd68....      查看两版本提交之间的区别
+
+> git diff origin/master..master        比较远程分支master上有本地分支master上没有的
+> git diff origin/master..master --stat 只显示差异的文件，不显示具体内容
+
+> git diff-tree -C -r ac... xns5... 比较两版提交之间的所有区别(适用于提交量过大的场景)
+  -C  detect copies
+  -r  diff recursively

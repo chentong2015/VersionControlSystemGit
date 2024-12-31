@@ -1,0 +1,31 @@
+Rebase以追加的方式合并分支：
+不保留分支历史记录，将当前分支新的变更叠加到另一个分支上
+进行rebase合并的过程中可能存储变更之间的冲突
+
+> git checkout test
+> git rebase main
+main: c1 -> c2 -> c3            之后直接使用Fast-forward合并test分支，没有Conflict
+test: c1 -> c2 -> fix1          现有的历史记录不保留
+      c1 -> c2 -> "c3" -> fix1  将新的fix叠加到main的历史记录上
+
+TODO. Case 1:
+远端分支由于被追加其他的变更，导致当前分支无法push
+将本地分支的变更叠加到远端master分支上，丢弃当前分支历史记录，然后再push
+> get rebase origin/master
+
+TODO. Case 2:
+本地新添加的fix需要叠加到master最新变更上才能提交PR
+rebase测试分支并将其叠加到当前分支HEAD上，并切换到test分支
+> git rebase HEAD test
+  > git checkout test 等效于两部操作
+  > git rebase main
+
+TODO. Case 3:
+将远程分支最新changes拉下来，然后将本地分支变更叠加在上面
+> git pull --rebase=true
+
+TODO. 处理rebase的结果
+> git rebase --abort 由于冲突的产生，撤销rebase操作
+> git rebase --continue 设置rebase的提交信息,可以使用本地commit提交信息
+  "refresh project on mac os with rebasing"
+  Successfully rebased and updated refs/heads/main.
