@@ -1,17 +1,16 @@
 > git whatchanged   显示Commit提交所修改的文件
 
+> git show HEAD     显示HEAD提交日志(最新一次提交信息)
+> git show HEAD^    显示HEAD的父版本提交日志
 > git show dfb02*** 显示某个提交的详细内容
 > git show dfb02    可只用commitid的前几位
-
-> git show HEAD     显示HEAD提交日志(显示上一次提交的完整信息)
-> git show HEAD^    显示HEAD的父(上一个版本)的提交日志 ^^为上两个版本 ^5为上5个版本
 
 > git log         查看commit日志
 > git log -n 5    查看Top5 commit
 > git log --stat  显示提交日志及相关变动文件(查看每次提交的changelist变动)
 
-> git log --oneline
-> git log --oneline | wc -l 统计Commits提交次数
+> git log --oneline 单行显示单个commit提交
+> git log --oneline | wc -l 统计commits提交次数
 > git log --oneline --graph 图形化显示日志
 > git log --oneline --graph --all --decorate 以图形化形式显示所有分支提交
 

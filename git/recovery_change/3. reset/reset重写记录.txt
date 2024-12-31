@@ -1,0 +1,8 @@
+重写git commits历史记录，通过回撤修改提交的记录
+
+> git reset HEAD^ --soft (Save your changes, back to last commit)
+> git reset HEAD~1 --soft 软撤回到前两个commit状态
+
+> git reset --hard        默认撤回到HEAD的前一个版本
+> git reset --hard HEAD^  相当于在历史记录中删除最前面的commit
+> git reset --hard HEAD~1 撤回到前两个commit状态，废弃当前的变更changes

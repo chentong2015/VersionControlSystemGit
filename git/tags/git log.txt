@@ -1,4 +1,3 @@
-
 > git tag 显示所有标记的标签
 > git tag v1.0  显示v1.0的日志及详细内容
 > git tag -a v2.0 -m 'xxx'  # 增加v2.0的tag

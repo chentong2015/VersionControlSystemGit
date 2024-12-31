@@ -1,0 +1,9 @@
+撤销已经提交的commit，将撤销后的changelist变更置于changes中做下次提交
+撤销表更不会修改历史提交记录，而是采用叠加新的变更将之前的提交恢复
+
+> git revert 912aaf....
+  Revert specific commit id.
+
+> git revert HEAD~3
+  Revert the changes specified by the fourth last commit in HEAD
+  Create a new commit with the reverted changes.

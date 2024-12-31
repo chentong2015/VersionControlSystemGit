@@ -1,0 +1,2 @@
+TODO. checkout可用于撤销工作区的文件变更
+> git checkout file.txt 撤销指定文件的变更，文件还没有添加到Stage暂存区

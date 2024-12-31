@@ -2,7 +2,7 @@
 > git diff --cached      比较已添加Stage但还未commit的变更
 > git diff --cached      比较暂存区Stage和Repo仓库的区别
 
-> git diff HEAD~1..HEAD  HEAD是最新提交的版本，diff查看的区别是从前一版到HEAD的区别
+> git diff HEAD~1..HEAD  diff查看的区别是从前一版到HEAD的区别
 > git diff HEAD~1..      和上一个指令效果一致
 > git diff HEAD~1        和上一个指令效果一致
 

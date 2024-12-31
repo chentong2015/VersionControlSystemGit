@@ -1,4 +1,5 @@
 选择某分支某个commit提交进行cherry pick
+选择某分支某个commit中的部分文件进行cherry pick ?
 
 将指定分支的commit提取到当前分支, 并作为新的commit记录
 > git cherry-pick 6fa43245...
