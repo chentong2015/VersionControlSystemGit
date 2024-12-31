@@ -1,4 +1,4 @@
-Defect/Fix迁移设计: 从一个分支迁移到另一个分支(Cherry-Pick)
+Defect/Fix从一个分支迁移到另一个分支(Cherry-Pick)
 
 TODO. 使用自定迁移工具进行实现: 无需手动迁移和手动测试
 1. 提供要迁移的版本信息
