@@ -1,6 +1,6 @@
 > git diff --cached      比较暂存区Staging Area和Repository仓库的区别
-> git diff dd68....      查看两版本提交之间的的区别
-> git diff HEAD~1..HEAD  HEAD是最新提交的版本，diff查看的区别的是从前一版到HEAD的区别
+> git diff dd68....      查看两版本提交之间的区别
+> git diff HEAD~1..HEAD  HEAD是最新提交的版本，diff查看的区别是从前一版到HEAD的区别
 > git diff HEAD~1..      和上一个指令效果一致
 > git diff HEAD~1        和上一个指令效果一致
 

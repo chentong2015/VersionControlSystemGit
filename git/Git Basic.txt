@@ -7,6 +7,7 @@ https://git-scm.com/download/mac
 "Git Vim Editor"
 Ctrl+C + :wq 保存并推出git vim编辑
 
+--------------------------------------------------------------
 > git clean -n
 > git clean -f 移除掉新添加的，没有追踪的文件
 > git rm 删除index中的文件

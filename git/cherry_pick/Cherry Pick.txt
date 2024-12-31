@@ -1,5 +1,6 @@
-选择某分支的某个提交进行cherry pick
-将指定分支的(历史)commit提取到当前分支, 并作为一个新的commit记录
+选择某分支某个commit提交进行cherry pick
+
+将指定分支的commit提取到当前分支, 并作为新的commit记录
 > git cherry-pick 6fa43245...
   Copying a commit from one branch to another
 
