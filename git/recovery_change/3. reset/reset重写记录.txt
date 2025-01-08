@@ -1,6 +1,7 @@
 重写git commits历史记录，通过回撤修改提交的记录
+> git reset 65a6f9aaa***  撤回到指定CommitID历史提交位置
 
-> git reset HEAD^ --soft (Save your changes, back to last commit)
+> git reset HEAD^ --soft  软撤回(在撤回的同时保留Changes变更)
 > git reset HEAD~1 --soft 软撤回到前两个commit状态
 
 > git reset --hard        默认撤回到HEAD的前一个版本

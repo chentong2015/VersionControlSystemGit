@@ -1,0 +1,3 @@
+> git commit -m "..."  提交暂存区的数据到本地仓库
+> git commit --amend -m 'xxx' 合并上一次提交(用于反复修改)
+> git commit --amend 修正上一次提交的message信息
