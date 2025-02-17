@@ -5,12 +5,12 @@ fatal: unable to access 'https://**/ProjectA.git/': The requested URL returned e
 
 TODO. Github提供两种基于HTTP认证的方式: 废弃直接使用Username和Password
 通过页面用户登录并授权认证(确保是指定的用户)
-> git config --global credential.useHttpPath true
+  > git config --global credential.useHttpPath true
 
 使用API-Token替代Password进行认证(确保API Token是指定用户生成)
-> git clone https://github.com/chentong2015/JavaMasterClass.git
-Username for 'https: //github.com': chentong2015
-Password for 'https://chentong2015@github.com': API-Token
+  > git clone https://github.com/chentong2015/JavaMasterClass.git
+  Username for 'https: //github.com': chentong2015
+  Password for 'https://chentong2015@github.com': API-Token
 
-将API-Token设置到远程的Repo:
+将API-Token设置到远程REPO:
 > git remote set-url origin https://API-Token@github.com/chentong2015/project-name.git

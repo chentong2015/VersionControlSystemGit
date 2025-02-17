@@ -19,5 +19,4 @@ Any public Git repository can be forked or cloned.
 > git remote add feature https://github.com/xxx.git 添加多个远程仓库，push时指定名称
 
 > git remote rename origin destination 更改远程仓库的名称
-
 > git remote set-url origin new.git.url 更新当前项目链接的远程Repo仓库

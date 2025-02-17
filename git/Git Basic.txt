@@ -14,9 +14,11 @@ changes 本地变更
       -> Local Repo 本地仓库区
          -> Remote Repo 远程仓库区
 
---------------------------------------------------------------
+> git init 创建包含metadata的.git仓库
+
 > git clean -n
 > git clean -f 移除掉新添加的，没有追踪的文件
+
 > git rm 删除index中的文件
 > git rm -r * 递归删除
 
