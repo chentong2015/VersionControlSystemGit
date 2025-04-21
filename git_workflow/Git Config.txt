@@ -1,7 +1,14 @@
+TODO. Git下载和安装
+Windows下载git和git Bash
+Linux命令行
+ > sudo apt-get install git
+MacOS Xcode自动安装git
+ - 自动检测/usr/bin/git路径
+ - https://git-scm.com/download/mac
+
 TODO. Git的配置分为三层，每一层覆盖上层配置
 1. System level Config 针对整个Git系统层面配置
    C:Git/etc/gitconfig
-
    > git config --system
 
 2. User level Config 针对User用户层面所有Repo配置
@@ -9,7 +16,6 @@ TODO. Git的配置分为三层，每一层覆盖上层配置
       [user]
          name = ctong
          email = xxxx@gmail.com
-
    > git config --global --list     显示用户层面的系统设置
    > git config --global user.name  首次commit提交前必须设置用户信息 !
    > git config --global user.email
@@ -21,7 +27,6 @@ TODO. Git的配置分为三层，每一层覆盖上层配置
    > git config --global color.diff auto
    > git config --global color.branch auto
    > git config --global color.interactive auto
-
    > git config -global alias.lga "log --graph --oneline --all --decorate"
    > git lga  自定义简单的别名来执行具有复杂的指令
 
@@ -35,12 +40,11 @@ TODO. Git的配置分为三层，每一层覆盖上层配置
    > git config user.email "chen@gmail.com"
    > git config --unset user.name 取消指定的设置
    > git config --list 显示当前配置信息
-
    TODO. 查看当前Repo下的配置文件信息.git/config
    [core]
-         repositoryformatversion = 0
-         filemode = true
-         bare = false
-         logallrefupdates = true
-         ignorecase = true
-         precomposeunicode = true
+   repositoryformatversion = 0
+   filemode = true
+   bare = false
+   logallrefupdates = true
+   ignorecase = true
+   precomposeunicode = true

@@ -1,13 +1,3 @@
-Windows下载git和git Bash并在IDEA中使用
-Linux命令行sudo apt-get install git
-
-MacOS Xcode自动安装git, /usr/bin/git 该环境路径将会被自动检测
-https://git-scm.com/download/mac
-
-"Git Vim Editor"
-Ctrl+C + :wq 保存并退出
-
---------------------------------------------------------------
 TODO. Git Workflow 版本工作流
 changes 本地变更
    -> Stage/Index 暂存区
@@ -18,9 +8,11 @@ changes 本地变更
 
 > git clean -n
 > git clean -f 移除掉新添加的，没有追踪的文件
-
 > git rm 删除index中的文件
 > git rm -r * 递归删除
+
+"Git Vim Editor"
+Ctrl+C + :wq 保存并退出
 
 "error: cannot lock ref 'refs/tags/v2.8': 'refs/tags' exists"
 > git update-ref -d refs/tags

@@ -1,0 +1,13 @@
+TODO. Github支持基于SSH认证的方式
+生成公钥和私钥对，并将Public Key提供到GitHub，Private Key用户本地路径保存
+
+生成SSH密钥对 + Gitbub添加公钥证书 + 验证生成(用户路径文件)
+> ssh-keygen -t rsa -C "xxx@gmail.com"
+> cd ~/.ssh/
+> ls -l
+  /Users/tongchen/.ssh/id_rsa
+  /Users/tongchen/.ssh/id_rsa.pub
+> ssh git@github.com
+  /Users/tongchen/.ssh/known_hosts
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
