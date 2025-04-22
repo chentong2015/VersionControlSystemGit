@@ -1,0 +1,11 @@
+TODO. Fetch操作获取远程Repository的状态
+获取所有远程分支状态(例如删除), 更新本地分支Remote关联, 避免提交到删除分支
+Downloads the latest from remote without trying to merge or rebase anything.
+> git fetch
+
+Before fetching, remove any remote-tracking references that no longer exist on the remote.
+> git fetch --prune
+> git fetch --prune origin
+
+将fetch的更新合并到分支
+> git merge

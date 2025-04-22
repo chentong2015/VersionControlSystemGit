@@ -1,0 +1,11 @@
+TODO: Pull = Fetch + Merge
+> git pull
+> git pull origin master
+
+定义分支的追踪
+> git pull --set-upstream master origin/master
+Branch master set up to track remote branch master from origin
+
+允许合并不相关的历史记录
+> git pull origin main --allow-unrelated-histories
+The “fatal: refusing to merge unrelated histories” Git error
