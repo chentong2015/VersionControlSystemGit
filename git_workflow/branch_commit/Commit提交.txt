@@ -4,5 +4,6 @@
 
 > git commit -am "..." 将add和commit合为一步
 
-TODO. 强制提交: 跳过tslint检查.ts文件
+TODO. 默认Commit时会运行pre-commit和commit-msg钩子
+强制提交: 跳过tslint检查.ts文件, 不会检测.html格式的文件
 > git commit -m "msg" --no-verify
