@@ -1,0 +1,2 @@
+钩子是可以放置在hooks目录中的程序，用于在git执行的某些时刻触发操作
+https://git-scm.com/docs/githooks
