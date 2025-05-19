@@ -9,3 +9,11 @@ Branch master set up to track remote branch master from origin
 允许合并不相关的历史记录
 > git pull origin main --allow-unrelated-histories
 The “fatal: refusing to merge unrelated histories” Git error
+
+TODO. Git pull默认操作为merge，并不会执行rebase
+> git pull origin main
+  hint:   git config pull.rebase false  # merge
+  hint:   git config pull.rebase true   # rebase
+  hint:   git config pull.ff only       # fast-forward only
+You can replace "git config" with "git config --global" to set a default preference for all repositories.
+You can also pass --rebase, --no-rebase, or --ff-only on the command line to override the configured default per invocation.

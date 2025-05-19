@@ -3,8 +3,8 @@ TODO. 实战项目场景:
 如何pull同步远程主分支的commits到本地/main分支
 
 强制修改本地/main分支历史记录(可能丢失追踪文件信息), 然后pull同步
-Any uncommitted local change to tracked files will be lost, even if staged.
-Any local file that's not tracked by Git will not be affected.
-
 > git reset --hard HEAD
 > git pull
+
+Any uncommitted local change to tracked files will be lost, even if staged.
+Any local file that's not tracked by Git will not be affected.

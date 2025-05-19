@@ -1,0 +1,12 @@
+git-bisect
+Use binary search to find the commit that introduced a bug
+
+> git bisect start    启动二分查找错误
+> git bisect good $id 标记上一个好的版本
+> git bisect bad $id  标记出错的版本
+
+> git bisect bad/good 判断测试版本是否正确
+> git bisect visualize
+> git bisect reset 查找完成
+
+https://git-scm.com/docs/git-bisect
