@@ -1,4 +1,5 @@
 git-bisect
+https://git-scm.com/docs/git-bisect
 Use binary search to find the commit that introduced a bug
 
 > git bisect start    启动二分查找错误
@@ -8,5 +9,3 @@ Use binary search to find the commit that introduced a bug
 > git bisect bad/good 判断测试版本是否正确
 > git bisect visualize
 > git bisect reset 查找完成
-
-https://git-scm.com/docs/git-bisect
