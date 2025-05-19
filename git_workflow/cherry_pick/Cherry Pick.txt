@@ -1,9 +1,10 @@
 选择某分支某个commit提交进行cherry pick
-选择某分支某个commit中的部分文件进行cherry pick ?
-
 将指定分支的commit提取到当前分支, 并作为新的commit记录
 > git cherry-pick 6fa43245...
   Copying a commit from one branch to another
+
+同时选择多个提交记录:
+> git cherry-pick -x COMMIT_ID1 COMMIT_ID2 COMMIT_ID3 ...
 
 cherry pick在生成需改到changes里面的时候可能会有conflicts
 解决冲突之后再选择继续
