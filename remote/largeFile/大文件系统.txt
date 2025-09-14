@@ -1,0 +1,30 @@
+TODO. 推荐提交的大文件Size低于50M
+
+Git LFS 初始化
+> git lfs install
+
+跟踪大文件类型(使用LFS来存储)，在仓库中生成或更新.gitattributes文件，记录哪些类型的文件需要使用LFS
+> git lfs track "*.zip"
+> git lfs track "*.mp4"
+
+使用LFS来管理这些文件，提交指向LFS存储的大文件指针
+> git add largefile.zip
+> git commit -m "添加大文件"
+
+上传大文件内容到远程仓库支持的 LFS 服务器
+> git push origin main
+
+
+查看当前被Git LFS跟踪的文件类型
+> git lfs track
+  Listing tracked patterns
+    .zip (.gitattributes)
+  Listing excluded patterns
+
+查看本地Git LFS的状态
+> git lfs statusOn branch main
+  Objects to be pushed to origin/main:
+  Objects to be committed:
+  Objects not staged for commit:
+     Documents.zip (Git: 8e905da -> File: deleted)
+
