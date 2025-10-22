@@ -1,10 +1,7 @@
-TODO. Git下载和安装
+TODO. Git下载和安装 https://git-scm.com/download/
 Windows下载git和git Bash
-Linux命令行
- > sudo apt-get install git
-MacOS Xcode自动安装git
- - 自动检测/usr/bin/git路径
- - https://git-scm.com/download/mac
+Linux命令行> sudo apt-get install git
+MacOS Xcode自动安装git,c自动检测/usr/bin/git路径
 
 TODO. Git的配置分为三层，每一层覆盖上层配置
 1. System level Config 针对整个Git系统层面配置
