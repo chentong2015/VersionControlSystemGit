@@ -86,3 +86,4 @@ git grep "delete from"                                    # 文件中搜索文�
 git grep -e '#define' --and -e SORT_DIRENT
 git gc                                                    # 执行清空操作，删除悬空分支
 git fsck                                                  # file system check 文件系统检查
+git fsck --lost-found                                     # 列出"悬空"的提交(dangling commit)

@@ -1,6 +1,6 @@
-TODO. 基础教程(视频课程)
-Git tutorial: https://juejin.cn/post/7021023267028729887
+TODO. 基础教程 => 视频课程
 Git Video: https://www.youtube.com/watch?v=PN1k1CLXtlw
+Git tutorial: https://juejin.cn/post/7021023267028729887
 Git workflows: https://dev.to/gauri1504/mastering-version-control-with-git-beyond-the-basics-44ib
 
 Git Pro Book: https://git-scm.com/book/zh/v2
