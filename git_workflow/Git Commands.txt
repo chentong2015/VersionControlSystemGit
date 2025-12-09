@@ -1,4 +1,10 @@
-git command --help 自动打开本地文档
+"Git Vim Editor" Ctrl+C + :wq 保存并退出
+
+> git init 创建包含metadata的.git仓库
+> git clean -n
+> git clean -f 移除掉新添加的，没有追踪的文件
+
+> git command --help 自动打开本地文档
 
 git init                                                  # 初始化本地git仓库（创建新仓库）
 git config --global user.name "xxx"                       # 配置用户名

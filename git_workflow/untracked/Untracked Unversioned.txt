@@ -1,0 +1,7 @@
+TODO. 取消文件(或目录)的版本追踪
+--cached 表示只从索引(staging area)中移除文件
+> git rm --cached example.txt
+> git rm --cached -r folder
+
+> git rm example.txt 删除index中文件
+> git rm -r *        递归删除
