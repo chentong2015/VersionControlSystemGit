@@ -2,10 +2,7 @@ MacOs系统编辑的项目可能在项目目录中生成系统隐藏文件
 .DS_Store file is used to store Finder information about that folder, no use in a git repo.
 .DS_Store is a Mac-specific hidden file. It's also not something that need to add to source control.
 
-找下项目所有路径下的文件，并删除
-.DS_Store 应该被git忽略提交
-.DS_Store 需要统一地清楚掉
-
+找下项目中所有.DS_Store文件，忽略提交并删除
 > find . -name .DS_Store -print0
 > find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch -f
 
