@@ -1,4 +1,9 @@
-> git branch -D feature-fix             删除特定分支, 但提交对象还在仓库中(只要没有被GC清理)
-> git reflog                            列出所有最近HEAD的变动，找到删除分支的CommitID
-> git show 3a2b1c7...                   显示删除分支的提交内容
-> git checkout -b feature-fix 3a2b1c7   创建一个新分支指向旧提交进行恢复
+> git branch -D <branch-name>  删除特定分支, 但提交对象还在仓库中(只要没有被GC清理)
+> git reflog                   列出所有最近HEAD的变动，找到删除分支的CommitID
+> git show 3a2b1c7...          显示删除分支的提交内容
+
+> git checkout 3a2b1c7            直接切换到删除分支
+> git switch -c <new-branch-name> 基于删除分支创建新的分支名称
+
+// 等效于下面操作
+> git checkout -c <new-branch-name> 3a2b1c7
